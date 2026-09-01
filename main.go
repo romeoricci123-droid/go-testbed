@@ -3,18 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-
-	"github.com/google/uuid"
 )
 
 const Version = "0.1.0"
 
 func Greeting() string {
 	return "hello from go-testbed"
-}
-
-func NewID() string {
-	return uuid.New().String()
 }
 
 func main() {
