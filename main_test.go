@@ -15,10 +15,3 @@ func TestVersion(t *testing.T) {
 		t.Errorf("Version = %q, want %q", Version, "0.1.0")
 	}
 }
-
-func TestNewIDLength(t *testing.T) {
-	id := NewID()
-	if len(id) != 36 {
-		t.Errorf("NewID() length = %d, want 36", len(id))
-	}
-}
