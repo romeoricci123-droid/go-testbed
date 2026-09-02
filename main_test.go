@@ -15,3 +15,11 @@ func TestVersion(t *testing.T) {
 		t.Errorf("Version = %q, want %q", Version, "0.1.0")
 	}
 }
+
+func TestFarewell(t *testing.T) {
+	got := Farewell()
+	want := "goodbye from go-testbed"
+	if got != want {
+		t.Errorf("Farewell() = %q, want %q", got, want)
+	}
+}

@@ -11,6 +11,10 @@ func Greeting() string {
 	return "hello from go-testbed"
 }
 
+func Farewell() string {
+	return "goodbye from go-testbed"
+}
+
 func main() {
 	version := flag.Bool("version", false, "print version")
 	quiet := flag.Bool("quiet", false, "suppress output")
